@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.microservices</groupId>
-	<artifactId>config-server</artifactId>
+	<artifactId>practice-config-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>config-server</name>
+	<name>practice-config-server</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
