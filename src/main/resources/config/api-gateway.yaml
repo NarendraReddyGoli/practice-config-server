@@ -16,8 +16,8 @@ spring:
     gateway:
       mvc:
         routes:
-        - id: Department-Service
-          uri: lb://Department-Service
+        - id: department-service
+          uri: lb://department-service
           predicates:
             - Path=/department/**
         - id: employee-service
