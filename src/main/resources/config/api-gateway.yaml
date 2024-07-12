@@ -1,0 +1,26 @@
+server:
+  port: 7000
+  
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka/
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0
+
+spring:
+  cloud:
+    gateway:
+      mvc:
+        routes:
+        - id: Department-Service
+          uri: lb://Department-Service
+          predicates:
+            - Path=/department/**
+        - id: employee-service
+          uri: lb://employee-service
+          predicates:
+            - Path=/employee/** 
